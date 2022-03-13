@@ -1,0 +1,21 @@
+version: '3.4'
+services:
+  esac-tm-controller1:
+    network_mode: host
+    image: esac-tm-controller1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+        - /var/volumes/maps:/var/volumes/maps
+    ports:
+      - 8080:8080
+    expose:
+      - 8080
+    environment:
+      HTTP_PORT: 3000
+      DEDICATED_XML_PORT: 5000
+      WSS_PORT: 8080
+      JOIN_LINK: 'uplay://launch/5595/0/#join=xxxxxxxxxxxxxxxxxxxxx@Trackmania'
+      ROOM_NAME: 'esac.gg1'

@@ -1,0 +1,15 @@
+{
+  "name": "esac-tm-controller",
+  "description": "Trackmania server controller for ESAC.",
+  "version": "0.0.1",
+  "author": "ManiaPlanet Community",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "elementtree": "0.1.1",
+    "express": "^4.17.1",
+    "js-file-download": "^0.4.12",
+    "sax": "0.4.0",
+    "ws": "^7.3.1",
+    "xmlbuilder": "0.3.1"
+  }
+}
